@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
     public static void task1 () {
     int pinepple = 1;
@@ -35,6 +36,20 @@ public class Main {
         System.out.println("Общее количество учеников составляет " + allStudents + " человек");
         short allPapper = 480;
         System.out.println("На каждого ученика расчитано " + allPapper / allStudents + " листов бумаги");
+    }
+    public static void task4(){
+        int bottleInTwoMinutes = 16;
+        int bottleInOneMinute = bottleInTwoMinutes / 2;
+        System.out.println("За одну минуту производство изготавливает " + bottleInOneMinute + " бутылок");
+        int bottleInTwentyMinutes = bottleInOneMinute * 20;
+        System.out.println("За 20 минут машина произвела " + bottleInTwentyMinutes + " штук бутылок");
+        int minutesInOneDay = 60 * 24;
+        int bottleInDay = bottleInOneMinute * minutesInOneDay;
+        System.out.println("За сутки машина произвела " + bottleInDay + " штук бутылок");
+        int bottleInThreeDays = bottleInDay * 3;
+        System.out.println("За трое суток машина произвела " + bottleInThreeDays + " штук бутылок");
+        int bottleInMounth = bottleInDay * 30;
+        System.out.println("За месяц машина производит " + bottleInMounth + " штук бутылок");
 
     }
 }
