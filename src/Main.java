@@ -100,6 +100,38 @@ public class Main {
     }
     public static void task8(){
 
+        int mashaWages = 67760;
+        int denisWages = 83690;
+        int kristinaWages = 76230;
+
+        int mashaProcents = mashaWages / 100 * 10;
+        int denisProcents = denisWages / 100 * 10;
+        int kristinaProcents = kristinaWages /100 * 10;
+
+        int mashaFinishWages = mashaWages + mashaProcents;
+        int denisFinishWages = denisWages + denisProcents;
+        int kristinaFinishWages = kristinaWages + kristinaProcents;
+
+        long mashaWagesInYear = mashaWages * 12;
+        long denisWagesInYear = denisWages * 12;
+        long kristinaWagesInYear = kristinaWages * 12;
+
+        long mashaFinishWagesInYear = mashaFinishWages * 12;
+        long denisFinishWagesInYear = denisFinishWages * 12;
+        long kristinaFinishWagesInYear = kristinaFinishWages * 12;
+
+        long mashaDifferentWagesInYear = mashaFinishWagesInYear - mashaWagesInYear;
+        long denisDifferentWagesInYear = denisFinishWagesInYear - denisWagesInYear;
+        long kristinaDifferentWagesInYear = kristinaFinishWagesInYear - kristinaWagesInYear;
+
+        System.out.println("Маша теперь получает " + mashaFinishWages + "рублей, годовой доход вырос на "
+                + mashaDifferentWagesInYear + " рублей!");
+        System.out.println("Денис теперь получает " + denisFinishWages + "рублей, годовой доход вырос на "
+                + denisDifferentWagesInYear + " рублей!");
+        System.out.println("Кристина теперь получает " + kristinaFinishWages + "рублей, годовой доход вырос на "
+                + kristinaDifferentWagesInYear + " рублей!");
+
+
     }
 
 }
