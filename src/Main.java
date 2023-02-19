@@ -6,6 +6,8 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
+        task8();
     }
     public static void task1 () {
     int pinepple = 1;
@@ -83,4 +85,21 @@ public class Main {
         System.out.println("Вес завтра спортсмена в килограммах составит " + allBreakfestWeightInKilograms
                 + " киллограмм");
     }
+    public static void task7(){
+        int goal = 7000;
+        int lostWeightInDay = 250;
+        int lostWeightInDay2 = 500;
+        int days = goal / lostWeightInDay;
+        int days2 = goal / lostWeightInDay2;
+        int averageDays = (days + days2) / 2;
+        System.out.println("При потере " + lostWeightInDay + " грамм ежедневно, понадобится " + days
+                + " дней для достижения результата");
+        System.out.println("При потере " + lostWeightInDay2 + " грамм ежедневно, понадобится " + days2
+                + " дней для достижения результата");
+        System.out.println("В среднем понадобится " + averageDays + " день для достижения результата");
+    }
+    public static void task8(){
+
+    }
+
 }
