@@ -4,6 +4,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
     }
     public static void task1 () {
     int pinepple = 1;
@@ -50,6 +51,16 @@ public class Main {
         System.out.println("За трое суток машина произвела " + bottleInThreeDays + " штук бутылок");
         int bottleInMounth = bottleInDay * 30;
         System.out.println("За месяц машина производит " + bottleInMounth + " штук бутылок");
-
+    }
+    public static void task5(){
+        int allJars = 120;
+        int whiteColor = 2;
+        int brownColor = 4;
+        int colorInOneRoom = whiteColor + brownColor;
+        int allRooms = allJars / colorInOneRoom;
+        int allWhiteColor = whiteColor * allRooms;
+        int allBrownColor = brownColor * allRooms;
+        System.out.println("В школе, где " + allRooms + " классов, нужно " + allWhiteColor + " банок белой краски и "
+                + allBrownColor + " банок коричневой краски.");
     }
 }
